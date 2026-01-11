@@ -22,7 +22,7 @@ TensorFlow Hubの物体検出モデル（Faster R-CNN）を使用し、画像に
    pip install -r requirements.txt
 アプリを実行します。
 
-Bash
-
+```Bash
 python app.py
+```
 ターミナルに表示されるURL（例: http://127.0.0.1:7860）にブラウザでアクセスしてください。
