@@ -1,0 +1,5 @@
+gradio>=3.0
+tensorflow
+tensorflow_hub
+Pillow
+numpy
