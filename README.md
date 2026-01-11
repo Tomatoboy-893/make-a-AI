@@ -1,20 +1,28 @@
-# Object Detection App with Gradio & TensorFlow
+# Human vs Object Detection AI
 
-TensorFlow Hubの学習済みモデル（Faster R-CNN）を使用して、アップロードされた画像に「人」や「物」が写っているかを判定する簡易AIアプリケーションです。
-Gradioを使用してWebインターフェースを構築しています。
+TensorFlow Hubの物体検出モデル（Faster R-CNN）を使用し、画像に写っているのが「人」か「物」かを自動判定するWebアプリケーションです。
 
-## 概要
-- **モデル**: Faster R-CNN (ResNet50) from TensorFlow Hub
-- **機能**: 画像内の物体検出を行い、設定した閾値に基づいて「人」「物」「不明」を判定
-- **UI**: GradioによるWebブラウザ操作
+## デモ
+実行するとGradioによりWebブラウザ上で判定アプリが立ち上がります。
 
-## インストール方法 (ローカル環境)
+## 必要要件
+* Python 3.8以上推奨
+* 以下のライブラリ（`requirements.txt`に含まれています）
+    * gradio
+    * tensorflow
+    * tensorflow_hub
+    * numpy
+    * Pillow
 
-Google Colabで実行する場合は、リポジトリ内の `.ipynb` ファイルを開き、上部の「Open in Colab」ボタンを押してください。
+## インストールと実行方法
 
-ローカルで実行する場合は以下の手順です：
+1. リポジトリをクローンまたはダウンロードします。
+2. 必要なライブラリをインストールします。
+   ```bash
+   pip install -r requirements.txt
+アプリを実行します。
 
-1. リポジトリをクローン
-```bash
-git clone [あなたのリポジトリURL]
-cd [リポジトリ名]
+Bash
+
+python app.py
+ターミナルに表示されるURL（例: http://127.0.0.1:7860）にブラウザでアクセスしてください。
